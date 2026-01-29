@@ -113,7 +113,7 @@ Keyboard keys are **binary** — pressed or not pressed. This creates jerky, all
 Try PhysInput in your browser! The interactive demo lets you experience the physics models without installing anything.
 
 <p align="center">
-  <a href="https://brattzachary-bit.github.io/physinput">
+  <a href="https://htmlpreview.github.io/?https://gist.githubusercontent.com/brattzachary-bit/473027954032a010739a25cf5a1d7f2a/raw/52474cb45df759a753dbd2a4264e0893bf3bd2ba/PhysInput-Demo.html">
     <img src="docs/assets/demo-button.png" alt="Try Demo" width="200">
   </a>
 </p>
