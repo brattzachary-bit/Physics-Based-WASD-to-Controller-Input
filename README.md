@@ -364,35 +364,6 @@ config/
 }
 ```
 
----
-
-## Architecture
-
-```
-physinput/
-├── physinput/
-│   ├── __init__.py          # Package init, version, paths
-│   ├── __main__.py          # Entry point
-│   ├── core/
-│   │   ├── config.py        # Configuration management
-│   │   ├── engine.py        # Main orchestration loop
-│   │   ├── input_handler.py # Platform input capture
-│   │   ├── output_handler.py# Virtual gamepad output
-│   │   └── physics/         # Physics model implementations
-│   │       ├── base.py      # Abstract base class
-│   │       ├── spring.py    # Spring-damper models
-│   │       ├── newtonian.py # Momentum/Newtonian models
-│   │       ├── pid.py       # PID controller models
-│   │       └── fluid.py     # Fluid dynamics model
-│   └── ui/
-│       ├── main_window.py   # Main application window
-│       ├── wizard.py        # First-run setup wizard
-│       ├── theme.py         # UI styling
-│       └── widgets/         # Custom Qt widgets
-├── presets/                 # Game preset configurations
-├── pyproject.toml           # Package metadata
-└── README.md
-```
 
 ### Platform Backends
 
@@ -420,17 +391,6 @@ Open an issue with the `enhancement` label describing:
 - The problem you're trying to solve
 - Your proposed solution
 - Alternative approaches considered
-
-### 🔧 Pull Requests
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Make your changes
-4. Run tests: `pytest`
-5. Format code: `black physinput/`
-6. Commit: `git commit -m 'Add amazing feature'`
-7. Push: `git push origin feature/amazing-feature`
-8. Open a Pull Request
 
 ### 📝 Code Style
 
@@ -469,14 +429,14 @@ Possibly. PhysInput creates a virtual device that some anti-cheat systems detect
 <details>
 <summary><strong>Why not just use Steam Input?</strong></summary>
 
-Steam Input is great but only works with Steam games. PhysInput works system-wide with any game, emulator, or application that supports gamepads.
+Steam Input is great but only works with Steam games. PhysInput works system-wide with any game, emulator, or application that supports gamepads. Additionally, Steam Input does not support physics-based keyboard to controller conversion.
 
 </details>
 
 <details>
 <summary><strong>Can I use this for accessibility?</strong></summary>
 
-Yes! PhysInput was designed with accessibility in mind. It allows users who can only use keyboard/mouse to play games that require analog input. The physics smoothing also helps users with tremors or limited fine motor control.
+Yes! PhysInput was designed with accessibility in mind. It allows users who can only use keyboard/mouse to play games that require analogue input. The physics smoothing also helps users with tremors or limited fine motor control.
 
 </details>
 
